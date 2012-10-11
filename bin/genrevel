@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'genrevel'
+
+if ARGV.length > 0
+	GenRevel::Base.start
+else
+	ARGV << '-T'
+	puts "USAGE:"
+	GenRevel::Base.start
+end
